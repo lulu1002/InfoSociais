@@ -1,0 +1,100 @@
+body .containertwitch {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    transform: translateX(50px);
+    transform: translate(50px, 0);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+
+
+.containertwitch {
+  width: 90%; 
+  flex-direction: row;
+  background-color: rgba(99, 18, 175, 0.157);
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.containertwitch p {
+  position: fixed;
+  left: 30px;
+  top: 10px;
+  font-size: 18px;
+  color: #fff;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
+}
+
+.containertwitch:hover {
+  box-shadow: 0 0 20px rgba(142, 10, 186, 0.697);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.player-wrapper {
+  display: flex;
+  width: 400px;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+  background: black;
+  margin-top: 60px;
+
+}
+
+.chat-wrapper {
+  position: relative;
+  flex: 1;
+  margin-top: 60px;
+}
+
+.player-wrapper iframe{
+  background-color: transparent;
+  width: 400px;
+  height: 370px;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+
+  
+}
+.chat-wrapper iframe {
+  width: 400px;
+  height: 370px;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-left: 20px;
+
+  
+}
+
+
+
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .containertwitch {
+    flex-direction: column;
+    overflow-x: auto;
+    scrollbar-width: auto;
+  }
+
+  .player-wrapper {
+    height: 60vh;
+  }
+
+  .chat-wrapper {
+    height: 40vh;
+    border-left: none;
+    border-top: 2px solid #18181b;
+  }
+}
