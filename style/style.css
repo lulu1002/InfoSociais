@@ -5,10 +5,14 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #0f0f0f, #1a0033, #000814);
     color: #fff;
     overflow-x: hidden;
+
 }
 
 .img-head {
@@ -189,7 +193,7 @@ header p {
     gap: 8px;
     font-size: 18px;
     font-weight: bold;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -288,4 +292,25 @@ footer {
     text-align: center;
     padding: 40px;
     color: #777;
+}
+
+.responsive {
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    transition: 0.4s;
+    overflow: visible;
+    scrollbar-width: auto;
+}
+.twitch-embed{
+    width: 80%;
+    height: 480px;
+    border-radius: 15px;
+    margin: auto;
 }
