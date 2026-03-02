@@ -421,6 +421,13 @@
             margin-top: 30px;
         }
 
+        .container-qr h2{
+            display: flex;
+            align-self: center;
+            margin: 10px;
+            opacity: .7;
+        }
+
         .qr-cod {
             width: 100%;
             max-width: 200px;
@@ -432,4 +439,6 @@
             margin-top: 20px;
             font-size: 18px;
             text-align: center;
+            margin: 10px;
+            opacity: .7;
         }

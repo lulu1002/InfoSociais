@@ -1,6 +1,7 @@
 function donation() {
     const container = `
     <div class="container-qr">
+            <h2>livepix.gg/isaroza</h2>
             <img class="qr-cod" data-test-selector="image_test_selector"
                 src="https://panels.twitch.tv/panel-154843490-image-3120756a-abe7-4e03-a33d-ce28430a190a"
                 alt="Conteúdo do painel">
@@ -17,8 +18,7 @@ function sociais() {
     <div class="container">
     <div class="container-btn-sociais">
 
-        <button class="btn instagram">
-            <!-- SVG Instagram -->
+        <button class="btn instagram" onclick=window.location.href="https://www.instagram.com/isabela_roza">
             <svg viewBox="0 0 24 24">
                 <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 
             0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 
@@ -29,10 +29,10 @@ function sociais() {
             010-6zm4.5-.75a1.25 1.25 0 100 
             2.5 1.25 1.25 0 000-2.5z" />
             </svg>
-            https://www.instagram.com/isabela_roza
+            instagram.com/isabela_roza
         </button>
 
-        <button class="btn instagram">
+        <button class="btn instagram" onclick=window.location.href="https://www.instagram.com/marcianosleo">
             <svg viewBox="0 0 24 24">
                 <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 
             0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 
@@ -43,10 +43,10 @@ function sociais() {
             010-6zm4.5-.75a1.25 1.25 0 100 
             2.5 1.25 1.25 0 000-2.5z" />
             </svg>
-            https://www.instagram.com/marcianosleo
+            instagram.com/marcianosleo
         </button>
 
-        <button class="btn discord">
+        <button class="btn discord" onclick=window.location.href="https://discord.com/invite/cSR6nVx3rC" >
             <!-- SVG Discord -->
             <svg viewBox="0 0 24 24">
                 <path d="M20.317 4.369A19.791 19.791 0 0016.885 
