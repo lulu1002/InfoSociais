@@ -220,3 +220,5 @@ function wishlist() {
 
     document.getElementById("app").innerHTML= container
 }
+
+sociais();
