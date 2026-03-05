@@ -82,7 +82,7 @@ function sociais() {
 }
 
 function lives() {
-const containertwitch = `
+    const containertwitch = `
    
     <div class="containertwitch">
         <p>🔴 AO VIVO</p>
@@ -98,9 +98,9 @@ const containertwitch = `
 
     </div>
 `
-const app=document.getElementById("app");
-app.innerHTML = containertwitch;
-app.className= "app"
+    const app = document.getElementById("app");
+    app.innerHTML = containertwitch;
+    app.className = "app"
 
 }
 
@@ -124,9 +124,9 @@ const canais = [
     }
 ];
 
-async function carregarCanal(canal){
+async function carregarCanal(canal) {
 
-    
+
     const statsRes = await fetch(
         `https://www.googleapis.com/youtube/v3/channels?part=statistics,contentDetails&id=${canal.id}&key=${API_KEY}`
     );
@@ -138,7 +138,7 @@ async function carregarCanal(canal){
 
     const uploadsPlaylist = info.contentDetails.relatedPlaylists.uploads;
 
-   
+
     const videosRes = await fetch(
         `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=3&playlistId=${uploadsPlaylist}&key=${API_KEY}`
     );
@@ -199,11 +199,24 @@ function youtube() {
 
     </div>
     `;
-    const app=document.getElementById("app");
+    const app = document.getElementById("app");
     app.innerHTML = container;
-    app.className=""
+    app.className = ""
 
     setTimeout(() => {
         canais.forEach(c => carregarCanal(c));
     }, 100);
+}
+
+function wishlist() {
+    const container = `
+    <div id="isa" class="channel">
+            <div>
+            <a href="https://www.amazon.com.br/hz/wishlist/ls/1UFH0O2TLX9M8?type=wishlist&filter=unpurchased&sort=custom&viewType=list" Target="_blank"><img class="wish-img" src="../assets/wishlist.png"></a>
+            <p class="wish-paragrafo">Se Quiser Nos enviar Mimos ta aqui nossa wishlist:<a href="https://www.amazon.com.br/hz/wishlist/ls/1UFH0O2TLX9M8?type=wishlist&filter=unpurchased&sort=custom&viewType=list" Target="_blank"> Clique Aqui</a></p>
+            </div>
+    </div>
+    `;
+
+    document.getElementById("app").innerHTML= container
 }
